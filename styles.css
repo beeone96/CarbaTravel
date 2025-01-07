@@ -1,0 +1,84 @@
+/* Cargamos las fuentes locales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Icomoon;
+  src: url(fonts/icomoon/fonts/icomoon.ttf);
+}
+
+/* Definimos los iconos a usar*/
+i {
+  font-family: Icomoon;
+}
+
+i.hamburguer::before {
+  content: "\e9bd";
+}
+
+i.fullStar::before {
+  content: "\e9d9";
+}
+
+i.emptyStar::before {
+  content: "\e9d7";
+}
+
+i.map::before {
+  content: "\e94c";
+}
+
+i.twitter::before {
+  content: "\ea96";
+}
+
+i.facebook::before {
+  content: "\ea90";
+}
+
+i.instagram::before {
+  content: "\ea92";
+}
+
+i.mapMark::before {
+  content: "\e947";
+}
+
+i.phone::before {
+  content: "\e945";
+}
+
+i.envelop::before {
+  content: "\e942";
+}
+
+/* Destinos individuales */
+
+#parisPicture {
+  background-image: url(images/destination-1.jpg);
+}
+#californiaPicture {
+  background-image: url(images/destination-2.jpg);
+}
+#londonPicture {
+  background-image: url(images/destination-3.jpg);
+}
+#singapurPicture {
+  background-image: url(images/destination-4.jpg);
+}
+#sidneyPicture {
+  background-image: url(images/destination-5.jpg);
+}
+#kiotoPicture {
+  background-image: url(images/destination-6.jpg);
+}
