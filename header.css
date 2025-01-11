@@ -1,0 +1,86 @@
+body {
+    height: 100%;
+    margin: 0;
+  
+}
+/*----------*/
+                                    /*-----HEADER-----*/
+header {
+    background-image: url("images/bg_3.jpg");  /*Establecemos la imágen de fondo, medidas y posición*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    color: #ffff; 
+    display:grid; /*Establecemos un grid para el header dividiendolo en una coluna y dos filas*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+/*-----NAVCONTAINER-----*/
+#navContainer nav{
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+  }
+
+    /*-----MENU HORIZONTAL-----*/
+
+#horizontalMenu{
+    width: 100%;
+}
+#horizontalMenu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 1vh;
+    gap: 2vh;
+    columns: 2;
+    padding-left: 10%;
+}
+
+#horizontalMenu ul li a{
+    display:block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 0.7vh;
+    font-size: 1.5vh;
+    white-space: nowrap; /*Evitamos que el texto se desborde del contenedor*/
+}
+        /*-----AGREGARLISTADO-----*/
+#listado{
+    border: solid #ffff 1px;
+    border-radius: 5vh;
+    padding: 0.7vh 2vh;
+}
+
+#listado:hover{
+    background-color: #F85959;
+    color: #fff;
+    border-color: #F85959;
+}
+
+    /*-----LOGO-----*/
+#navContainer .logo{
+    padding-left:  10%;
+    padding-right: 10%;
+    font-size: 2.1vh;
+    color: #ffff;
+}
+
+    /*-----BOTÓN DE MENU-----*/
+#navContainer nav button{
+    display: none; /*Ocultamos el botón de Menu mientras no haga falta*/
+  }
+
+    /*-----SUBHEADER-----*/
+
+#subHeader{
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15%;
+}
