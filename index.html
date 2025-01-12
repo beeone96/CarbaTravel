@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" type="text/css" href="header.css" />
+  <link rel="stylesheet" type="text/css" href="barraLateral.css" />
+  <link rel="stylesheet" type="text/css" href="contenidoViajes.css" />
 </head>
 
 <body>
@@ -48,17 +50,13 @@
     <!-- lateral izquierdo -->
     <div id="leftColumn">
       <!-- bloque encontrar ciudad -->
-      <div class="leftBlock">
-        <h3>Encontrar ciudad</h3>
+      <div class="encontrarCiudad">
+        <h3>ENCONTRAR CIUDAD</h3>
         <form action="#">
           <div>
-            <div>
-              <input type="text" placeholder="Destino, Ciudad" />
-            </div>
-            <div>
+              <input type="text" class="contFormulario" placeholder="Destino, Ciudad" />        
               <div>
-                <div><span></span></div>
-                <select name="" id="" placeholder="Búsqueda palabra clave">
+                <select name="" class="contFormulario1" id="location" placeholder="Búsqueda palabra clave">
                   <option value="">Ubicación</option>
                   <option value="">San Francisco USA</option>
                   <option value="">Berlin Alemania</option>
@@ -66,15 +64,12 @@
                   <option value="">Paris Francia</option>
                 </select>
               </div>
-            </div>
-            <div>
-              <input type="text" id="checkin_date" placeholder="Fecha desde" />
-            </div>
-            <div>
-              <input type="text" id="checkin_date" placeholder="Fecha hasta" />
-            </div>
-            <div>
-              <div>
+              <input type="text" class="contFormulario" id="checkin_date" placeholder="Fecha desde" />
+            
+              <input type="text" class="contFormulario" id="checkin_date" placeholder="Fecha hasta" />
+            
+          
+              <div id="precio">
                 <span>
                   <input type="number" value="25000" min="0" max="120000" /> -
                   <input type="number" value="50000" min="0" max="120000" />
@@ -82,7 +77,7 @@
                 <input value="1000" min="0" max="120000" step="500" type="range" />
                 <input value="50000" min="0" max="120000" step="500" type="range" />
               </div>
-            </div>
+          
             <div>
               <input class="redButton hoverRedBorder" type="submit" value="Buscar" />
             </div>
@@ -90,11 +85,11 @@
         </form>
       </div>
       <!-- bloque valoración estrellas -->
-      <div class="leftBlock">
+      <div class="clasificacionEstrellas">
         <h3>Clasificación estrellas</h3>
         <form method="post">
           <div class="starsContainer">
-            <input type="checkbox" id="exampleCheck1" />
+            <input type="checkbox" id="exampleCheck5" class="checkboxStars"/>
             <label for="exampleCheck1">
               <p>
                 <span>
@@ -108,7 +103,7 @@
             </label>
           </div>
           <div class="starsContainer">
-            <input type="checkbox" id="exampleCheck1" />
+            <input type="checkbox" id="exampleCheck4" class="checkboxStars" />
             <label for="exampleCheck1">
               <p>
                 <span>
@@ -122,7 +117,7 @@
             </label>
           </div>
           <div class="starsContainer">
-            <input type="checkbox" id="exampleCheck1" />
+            <input type="checkbox" id="exampleCheck3" class="checkboxStars"/>
             <label for="exampleCheck1">
               <p>
                 <span>
@@ -136,7 +131,7 @@
             </label>
           </div>
           <div class="starsContainer">
-            <input type="checkbox" id="exampleCheck1" />
+            <input type="checkbox" id="exampleCheck2" class="checkboxStars"/>
             <label for="exampleCheck1">
               <p>
                 <span>
@@ -150,7 +145,7 @@
             </label>
           </div>
           <div class="starsContainer">
-            <input type="checkbox" id="exampleCheck1" />
+            <input type="checkbox" id="exampleCheck1" class="checkboxStars"/>
             <label for="exampleCheck1">
               <p>
                 <span>
@@ -171,7 +166,10 @@
     <div id="destinationsArea">
       <!-- Paris -->
       <div class="destination">
-        <div id="parisPicture" class="destinationPicture"></div>
+        <div id="parisPicture" class="destinationPicture">
+          <img src="images/destination-1.jpg" alt="Paris">
+        </div>
+        
         <div class="destinationContent">
           <div class="destinationInfo">
             <div>
@@ -205,7 +203,10 @@
 
     <!-- California-->
     <div class="destination">
-      <div id="californiaPicture" class="destinationPicture"></div>
+      <div id="californiaPicture" class="destinationPicture">
+        <img src="images/destination-2.jpg" alt="California">
+      </div>
+      
       <div class="destinationContent">
         <div class="destinationInfo">
           <div>
@@ -215,7 +216,7 @@
             <i class="fullStar"></i>
             <i class="fullStar"></i>
             <i class="fullStar"></i>
-            <i class="emptyStar"></i>
+            <i class="fullStar"></i>
             <span>8 Valoraciones</span>
           </p>
         </div>
@@ -239,7 +240,10 @@
 
     <!-- Londres-->
     <div class="destination">
-      <div id="londonPicture" class="destinationPicture"></div>
+      <div id="londonPicture" class="destinationPicture">
+        <img src="images/destination-3.jpg" alt="Londres">
+      </div>
+      
       <div class="destinationContent">
         <div class="destinationInfo">
           <div>
@@ -272,7 +276,10 @@
     </div>
     <!-- Singapur-->
     <div class="destination">
-      <div id="singapurPicture" class="destinationPicture"></div>
+      <div id="singapurPicture" class="destinationPicture">
+        <img src="images/destination-4.jpg" alt="Singapur">
+      </div>
+      
       <div class="destinationContent">
         <div class="destinationInfo">
           <div>
@@ -305,7 +312,10 @@
     </div>
     <!-- Signey-->
     <div class="destination">
-      <div id="sidneyPicture" class="destinationPicture"></div>
+      <div id="sidneyPicture" class="destinationPicture">
+        <img src="images/destination-5.jpg" alt="Sidney">
+      </div>  
+      
       <div class="destinationContent">
         <div class="destinationInfo">
           <div>
@@ -338,7 +348,10 @@
     </div>
     <!-- Kioto-->
     <div class="destination">
-      <div id="kiotoPicture" class="destinationPicture"></div>
+      <div id="kiotoPicture" class="destinationPicture">
+        <img src="images/destination-6.jpg" alt="Kioto">
+      </div>
+      
       <div class="destinationContent">
         <div class="destinationInfo">
           <div>

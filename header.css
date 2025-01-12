@@ -1,5 +1,6 @@
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
   
 }
@@ -11,7 +12,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 60vh;
+    height: 93vh;
     color: #ffff; 
     display:grid; /*Establecemos un grid para el header dividiendolo en una coluna y dos filas*/
     grid-template-columns: 1fr;
@@ -20,7 +21,7 @@ header {
 
 /*-----NAVCONTAINER-----*/
 #navContainer nav{
-    grid-row: 1;
+    grid-row: 1; /*colocamos el contenedor en la primera columna y le damos la disposición de flexbox*/
     display: flex;
     align-items: center;
     padding-top: 2vh;
@@ -31,14 +32,15 @@ header {
 #horizontalMenu{
     width: 100%;
 }
+
 #horizontalMenu ul{
-    display: flex;
+    display: flex; /*posicionamos el menu de forma lateral y dandole un espacio entre cada elemento*/
     justify-content: space-between;
     width: 70%;
     padding-top: 1vh;
-    gap: 2vh;
-    columns: 2;
-    padding-left: 10%;
+    gap: 2%;
+    margin-left: 10%;
+    font-size: bold;
 }
 
 #horizontalMenu ul li a{
@@ -46,12 +48,12 @@ header {
     color: #ffff;
     text-decoration: none;
     padding: 0.7vh;
-    font-size: 1.5vh;
+    font-size: 1vh;
     white-space: nowrap; /*Evitamos que el texto se desborde del contenedor*/
 }
         /*-----AGREGARLISTADO-----*/
 #listado{
-    border: solid #ffff 1px;
+    border: solid #ffff 1px;/*le damos estilo al boton de agregar en el menú*/
     border-radius: 5vh;
     padding: 0.7vh 2vh;
 }
@@ -64,9 +66,9 @@ header {
 
     /*-----LOGO-----*/
 #navContainer .logo{
-    padding-left:  10%;
-    padding-right: 10%;
-    font-size: 2.1vh;
+    margin-left:  20%; /*situamos y damos estilo al logo*/
+    font-size: 2vh;
+    font-size: bold;
     color: #ffff;
 }
 
@@ -78,9 +80,37 @@ header {
     /*-----SUBHEADER-----*/
 
 #subHeader{
-    grid-row: 2;
+    grid-row: 2;/*colocoamos el subheader centrando el texto*/
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 15%;
+}
+
+
+/*-----MEDIA QUERYS-----*/
+
+/*le damos todas las medidas necesarias para poder usar la aplicación en dispositivos móviles*/
+
+@media (max-width: 768px) {
+    header {
+        height: 40vh; 
+    }
+
+    #horizontalMenu ul {
+        display: none; 
+    }
+    #navContainer nav button {
+        display: block; 
+    }
+
+    #navContainer .logo {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 1.8vh; 
+    }
+
+    #subHeader {
+        padding-bottom: 10%; 
+    }
 }

@@ -1,0 +1,140 @@
+#content {
+    display: grid; /* Declaramos dos columnas para colocar la barra lateral y la información de los viajes */
+    grid-template-columns: 1fr 3fr; 
+    grid-gap: 5%; 
+    padding: 30px; 
+}
+
+/*-----BARRA LATERAL IZQUIERDA-----*/                           
+#leftColumn {
+    grid-column: 1; /*situamos la columna izquierda en la primera columna del contenido, situandolo en el lado derecho*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%; 
+    max-width: 300px;
+    margin-left: 60%; 
+}
+
+/*-----ENCONTRAR CIUDAD-----*/
+.encontrarCiudad {
+    width: 100%; /*Le damos ancho y estilo a los bordes del contenedor de la ciudad*/
+    margin-bottom: 20px; 
+    border: solid #e6e6e6 1px; 
+    border-radius: 5px; 
+    background-color: #f8faff;
+    padding: 3vh; 
+}
+
+.encontrarCiudad h3 {
+    margin-bottom: 10px; /* Le damos posicion y tamañoal titulo*/
+    font-size: 1.5vh;     
+}
+
+.contFormulario {
+    width: 90%; /*situamos y damos estilo al formulario de la ciudad*/
+    padding: 10px; 
+    border: solid #e6e6e6 1px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+}
+
+#location {
+    width: 100%; /*posicion y estilo del input de la ubicacion*/
+    padding: 10px; 
+    border: solid #e6e6e6 1px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+}
+
+/*-----PRECIOS-----*/
+#precio {
+    display: flex; /*colocamos los imputs de precio en una columna y le damos estilo*/
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#precio span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+#precio input[type="number"] {
+    width: 45%; 
+    padding: 5px; 
+    border: solid #e6e6e6 1px; 
+    border-radius: 5px; 
+}
+
+#precio input[type="range"] {
+    width: 100%; 
+    margin-bottom: 10px; 
+    color: #f85959;
+}
+
+/*-----BOTÓN DE BÚSQUEDA-----*/
+.redButton {
+    width: 100%; /*le damos estilo aL botón de búsqueda y su :hover, haciendo que aparezca*/
+    padding: 10px; /*el puntero cuando pasas por encima*/
+    background-color: #F85959; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.redButton:hover {
+    background-color: #fff; 
+    color:#F85959;
+    border: solid #F85959 1px; 
+}
+
+/*-----CLASIFICACIÓN ESTRELLAS-----*/
+.clasificacionEstrellas {
+    width: 100%;   
+    margin-bottom: 20px; 
+    border: solid #e6e6e6 1px; 
+    border-radius: 5px; 
+    background-color: #f8faff;
+    padding: 2vh 3vh; 
+}
+
+.clasificacionEstrellas h3 {
+    margin-bottom: 10px; 
+}
+
+.starsContainer {
+    width: 100%; 
+    display: flex;
+    padding-bottom: 2vh;    
+}
+
+.fullStar, .emptyStar {
+    color: #F85959; 
+}
+
+.checkboxStars{
+    margin-right: 2vh;
+}
+
+
+/*-----MEDIA QUERYS----*/
+
+@media (max-width: 768px) {
+    #content {
+        grid-template-columns: 1fr; 
+    }
+
+    #leftColumn, #destinationsArea {
+        grid-column: 1;
+    }
+
+    #leftColumn {
+        margin-left: 0; 
+        max-width: 100%;
+        width: 100%;
+    }
+}
