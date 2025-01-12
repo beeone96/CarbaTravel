@@ -1,0 +1,245 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    min-width: 100%;
+}
+
+/*-----ZONA DE DESTINOS-----*/
+#destinationsArea { /*Le damos forma al contenedor principal de los destinos*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vh, 1fr));
+    grid-gap: 0.5rem; 
+    padding: 20px;
+    margin-right: 10vh;
+    height: 90%;
+}
+
+/*-----DESTINO-----*/
+.destination {
+    margin: 0 10%;/*^estilo comun para todos los destinos, organizado en columna*/
+    background-color: #fff;/*para que la informacion de cada destino vaya en esa direccion*/
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 10rem;
+    white-space: wrap;
+}
+
+.destination:hover {
+    transform: translateY(-10px); 
+}
+
+.destinationPicture {
+    width: 100%;
+    height: 40%; 
+    overflow: hidden;
+}
+
+.destinationPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
+}
+
+.destinationContent {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.destinationContent h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+.destinationContent h3 span {
+    color: #666;
+    font-size: 0.8rem;
+}
+.valoraciones{
+    font-size: 1.3rem;
+    color: black;
+}
+ .price{
+    color: #2f89fc;
+    
+ }
+
+ 
+.destinationFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.destinationFooter span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vh;
+    
+}
+.destinationFooter span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.greenButton {
+    background-color: #fdd3d3;
+    color:  #f85959;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.greenButton:hover {
+    background-color: #F85959;
+    color: #fdd3d3
+}
+
+
+/*-----NAV PAGES-----*/
+
+
+div #navPages {
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+}
+
+#navPages ul {
+    margin-top: 10%;
+    display: flex;
+    justify-content:space-between;
+    gap: 10vh;
+    padding: 0;
+}
+
+#navPages ul li {
+    margin: 0 5px;
+}
+
+#navPages ul li a, #navPages ul li span {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border: solid #F85959 1px;
+    border-radius: 5vh;
+
+} 
+
+#navPages ul li a:hover {
+    background-color: #F85959;
+    color: #fff;
+}
+
+#navPages ul li span {
+    background-color: #F85959;
+    color: #fff;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+
+@media (max-width: 850px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    #destinationsArea {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .destination {
+        width: 95%;
+        margin-left: 0;
+    }
+    #navPages ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 675px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    #destinationsArea {
+        grid-template-columns: 1fr;
+        margin-left: 1vh;
+
+    }
+
+    .destination {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #navPages ul {
+        margin-top: 10%;
+        display: flex;
+        justify-content:space-between;
+        gap: 5vh;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    #destinationsArea {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .destination {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #navPages ul {
+        margin-top: 10%;
+        display: flex;
+        justify-content:space-between;
+        gap: 5vh;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    #destinationsArea {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .destination {
+        width: 53%;
+        margin-left: 0;
+    }
+
+    #navPages ul {
+        margin-top: 10%;
+        display: flex;
+        justify-content:space-between;
+        padding: 0;
+    }
+}

@@ -7,9 +7,10 @@
   <!-- Añadir etiqueta meta para diseño responsive -->
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" type="text/css" href="header.css" />
-  <link rel="stylesheet" type="text/css" href="barraLateral.css" />
-  <link rel="stylesheet" type="text/css" href="contenidoViajes.css" />
+  <link rel="stylesheet" type="text/css" href="./css/header.css" />
+  <link rel="stylesheet" type="text/css" href="./css/barraLateral.css" />
+  <link rel="stylesheet" type="text/css" href="./css/contenidoViajes.css" />
+  <link rel="stylesheet" type="text/css" href="./css/footer.css" />
 </head>
 
 <body>
@@ -79,7 +80,7 @@
               </div>
           
             <div>
-              <input class="redButton hoverRedBorder" type="submit" value="Buscar" />
+              <input class="redButton hoverRedBorder" type="submit" value="Buscar" id="redButton" />
             </div>
           </div>
         </form>
@@ -165,7 +166,7 @@
     <!-- Zona destinos con imágenes y descripción -->
     <div id="destinationsArea">
       <!-- Paris -->
-      <div class="destination">
+      <div class="destination"  id="paris">
         <div id="parisPicture" class="destinationPicture">
           <img src="images/destination-1.jpg" alt="Paris">
         </div>
@@ -180,7 +181,7 @@
               <i class="fullStar"></i>
               <i class="fullStar"></i>
               <i class="emptyStar"></i>
-              <span>8 Valoraciones</span>
+              <span class="valoraciones">8 Valoraciones</span>
             </p>
           </div>
           <div>
@@ -199,203 +200,205 @@
           <span><a class="greenButton rounded" href="#">Descubre</a></span>
         </p>
       </div>
-    </div>
+      </div>
+    
 
-    <!-- California-->
-    <div class="destination">
-      <div id="californiaPicture" class="destinationPicture">
-        <img src="images/destination-2.jpg" alt="California">
-      </div>
-      
-      <div class="destinationContent">
-        <div class="destinationInfo">
+      <!-- California-->
+      <div class="destination" id="california">
+        <div id="californiaPicture" class="destinationPicture">
+          <img src="images/destination-2.jpg" alt="California">
+        </div>
+        
+        <div class="destinationContent">
+          <div class="destinationInfo">
+            <div>
+              <h3><a href=" #">California</a></h3>
+            <p>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <span class="valoraciones">8 Valoraciones</span>
+            </p>
+          </div>
           <div>
-            <h3><a href=" #">California</a></h3>
-          <p>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <span>8 Valoraciones</span>
-          </p>
+            <span class="price">200€</span>
+          </div>
         </div>
-        <div>
-          <span class="price">200€</span>
-        </div>
+        <p>
+          Explora el estado dorado, donde las playas, los desiertos y los viñedos
+          se unen en un paisaje único. Desde la energía vibrante de Los Ángeles
+          hasta la belleza natural de Yosemite, ¡California te espera!
+        </p>
+        <p><span>2 días 3 noches</span></p>
+        <hr />
+        <p class="destinationFooter">
+          <span><i class="map"></i> San Franciso</span>
+          <span><a class="greenButton rounded" href="#">Descubre</a></span>
+        </p>
       </div>
-      <p>
-        Explora el estado dorado, donde las playas, los desiertos y los viñedos
-        se unen en un paisaje único. Desde la energía vibrante de Los Ángeles
-        hasta la belleza natural de Yosemite, ¡California te espera!
-      </p>
-      <p><span>2 días 3 noches</span></p>
-      <hr />
-      <p class="destinationFooter">
-        <span><i class="map"></i> San Franciso</span>
-        <span><a class="greenButton rounded" href="#">Descubre</a></span>
-      </p>
-    </div>
-    </div>
+      </div>
 
-    <!-- Londres-->
-    <div class="destination">
-      <div id="londonPicture" class="destinationPicture">
-        <img src="images/destination-3.jpg" alt="Londres">
-      </div>
-      
-      <div class="destinationContent">
-        <div class="destinationInfo">
+      <!-- Londres-->
+      <div class="destination" id="londres">
+        <div id="londonPicture" class="destinationPicture">
+          <img src="images/destination-3.jpg" alt="Londres">
+        </div>
+        
+        <div class="destinationContent">
+          <div class="destinationInfo">
+            <div>
+              <h3><a href=" #">Londres</a></h3>
+            <p>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i  class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="emptyStar"></i>
+              <span class="valoraciones">8 Valoraciones</span>
+            </p>
+          </div>
           <div>
-            <h3><a href=" #">Londres</a></h3>
-          <p>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="emptyStar"></i>
-            <span>8 Valoraciones</span>
-          </p>
+            <span class="price">200€</span>
+          </div>
         </div>
-        <div>
-          <span class="price">200€</span>
+        <p>
+          Vive el encanto de una ciudad donde la tradición y la modernidad se fusionan.
+          Descubre los monumentos icónicos, pasea por sus barrios únicos y disfruta de
+          la vibrante vida cultural londinense.
+        </p>
+        <p><span>2 días 3 noches</span></p>
+        <hr />
+        <p class="destinationFooter">
+          <span><i class="map"></i> Londres</span>
+          <span><a class="greenButton rounded" href="#">Descubre</a></span>
+        </p>
+      </div>
+      </div>
+      <!-- Singapur-->
+      <div class="destination" id="singapur">
+        <div id="singapurPicture" class="destinationPicture">
+          <img src="images/destination-4.jpg" alt="Singapur">
         </div>
-      </div>
-      <p>
-        Vive el encanto de una ciudad donde la tradición y la modernidad se fusionan.
-        Descubre los monumentos icónicos, pasea por sus barrios únicos y disfruta de
-        la vibrante vida cultural londinense.
-      </p>
-      <p><span>2 días 3 noches</span></p>
-      <hr />
-      <p class="destinationFooter">
-        <span><i class="map"></i> Londres</span>
-        <span><a class="greenButton rounded" href="#">Descubre</a></span>
-      </p>
-    </div>
-    </div>
-    <!-- Singapur-->
-    <div class="destination">
-      <div id="singapurPicture" class="destinationPicture">
-        <img src="images/destination-4.jpg" alt="Singapur">
-      </div>
-      
-      <div class="destinationContent">
-        <div class="destinationInfo">
+        
+        <div class="destinationContent">
+          <div class="destinationInfo">
+            <div>
+              <h3><a href=" #">Singapur</a></h3>
+            <p>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="emptyStar"></i>
+              <span class="valoraciones">8 Valoraciones</span>
+            </p>
+          </div>
           <div>
-            <h3><a href=" #">Singapur</a></h3>
-          <p>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="emptyStar"></i>
-            <span>8 Valoraciones</span>
-          </p>
+            <span class="price">200€</span>
+          </div>
         </div>
-        <div>
-          <span class="price">200€</span>
-        </div>
+        <p>
+          Un oasis futurista en el corazón de Asia, donde los rascacielos, jardines colgantes
+          y mercados tradicionales asiaticos se combinan. Descubre la magia de esta metrópoli
+          multicultural y llena de contrastes.
+        </p>
+        <p><span>2 días 3 noches</span></p>
+        <hr />
+        <p class="destinationFooter">
+          <span><i class="map"></i> Singapur</span>
+          <span><a class="greenButton rounded" href="#">Descubre</a></span>
+        </p>
       </div>
-      <p>
-        Un oasis futurista en el corazón de Asia, donde los rascacielos, jardines colgantes
-        y mercados tradicionales asiaticos se combinan. Descubre la magia de esta metrópoli
-        multicultural y llena de contrastes.
-      </p>
-      <p><span>2 días 3 noches</span></p>
-      <hr />
-      <p class="destinationFooter">
-        <span><i class="map"></i> Singapur</span>
-        <span><a class="greenButton rounded" href="#">Descubre</a></span>
-      </p>
-    </div>
-    </div>
-    <!-- Signey-->
-    <div class="destination">
-      <div id="sidneyPicture" class="destinationPicture">
-        <img src="images/destination-5.jpg" alt="Sidney">
-      </div>  
-      
-      <div class="destinationContent">
-        <div class="destinationInfo">
+      </div>
+      <!-- Signey-->
+      <div class="destination" id="sidney">
+        <div id="sidneyPicture" class="destinationPicture">
+          <img src="images/destination-5.jpg" alt="Sidney">
+        </div>  
+        
+        <div class="destinationContent">
+          <div class="destinationInfo">
+            <div>
+              <h3><a href=" #">Sidney</a></h3>
+            <p>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="emptyStar"></i>
+              <span class="valoraciones">8 Valoraciones</span>
+            </p>
+          </div>
           <div>
-            <h3><a href=" #">Sidney</a></h3>
-          <p>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="emptyStar"></i>
-            <span>8 Valoraciones</span>
-          </p>
+            <span class="price">200€</span>
+          </div>
         </div>
-        <div>
-          <span class="price">200€</span>
+        <p>
+          Deleita tus sentidos en una ciudad costera vibrante y cosmopolita. Surfea
+          en Bondi Beach, una de las mejores playas del mundo, explora su icónica Ópera
+          y disfruta de una vida nocturna que nunca se apaga en la bahía de Sídney.
+        </p>
+        <p><span>2 días 3 noches</span></p>
+        <hr />
+        <p class="destinationFooter">
+          <span><i class="map"></i> Sidney</span>
+          <span><a class="greenButton rounded" href="#">Descubre</a></span>
+        </p>
+      </div>
+      </div>
+      <!-- Kioto-->
+      <div class="destination" id="kioto">
+        <div id="kiotoPicture" class="destinationPicture">
+          <img src="images/destination-6.jpg" alt="Kioto">
         </div>
-      </div>
-      <p>
-        Deleita tus sentidos en una ciudad costera vibrante y cosmopolita. Surfea
-        en Bondi Beach, una de las mejores playas del mundo, explora su icónica Ópera
-        y disfruta de una vida nocturna que nunca se apaga en la bahía de Sídney.
-      </p>
-      <p><span>2 días 3 noches</span></p>
-      <hr />
-      <p class="destinationFooter">
-        <span><i class="map"></i> Sidney</span>
-        <span><a class="greenButton rounded" href="#">Descubre</a></span>
-      </p>
-    </div>
-    </div>
-    <!-- Kioto-->
-    <div class="destination">
-      <div id="kiotoPicture" class="destinationPicture">
-        <img src="images/destination-6.jpg" alt="Kioto">
-      </div>
-      
-      <div class="destinationContent">
-        <div class="destinationInfo">
+        
+        <div class="destinationContent">
+          <div class="destinationInfo">
+            <div>
+              <h3><a href=" #">Kioto</a></h3>
+            <p>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="fullStar"></i>
+              <i class="emptyStar"></i>
+              <span class="valoraciones">8 Valoraciones</span>
+            </p>
+          </div>
           <div>
-            <h3><a href=" #">Kioto</a></h3>
-          <p>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="fullStar"></i>
-            <i class="emptyStar"></i>
-            <span>8 Valoraciones</span>
-          </p>
+            <span class="price">200€</span>
+          </div>
         </div>
-        <div>
-          <span class="price">200€</span>
-        </div>
+        <p>
+          Vive la emoción de una ciudad que nunca duerme, donde lo antiguo y lo moderno
+          se unen en un escenario fascinante. Disfruta de sus templos, la moda de Harajuku
+          y la increíble gastronomía japonesa.
+        </p>
+        <p><span>2 días 3 noches</span></p>
+        <hr />
+        <p class="destinationFooter">
+          <span><i class="map"></i> Kioto</span>
+          <span><a class="greenButton rounded" href="#">Descubre</a></span>
+        </p>
       </div>
-      <p>
-        Vive la emoción de una ciudad que nunca duerme, donde lo antiguo y lo moderno
-        se unen en un escenario fascinante. Disfruta de sus templos, la moda de Harajuku
-        y la increíble gastronomía japonesa.
-      </p>
-      <p><span>2 días 3 noches</span></p>
-      <hr />
-      <p class="destinationFooter">
-        <span><i class="map"></i> Kioto</span>
-        <span><a class="greenButton rounded" href="#">Descubre</a></span>
-      </p>
-    </div>
-    </div>
+      </div>
+    
 
-    <!-- zona números de páginas -->
-    <div id="navPages">
-      <ul>
-        <li><a href="#">&lt;</a></li>
-        <li><span>1</span></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&gt;</a></li>
-      </ul>
-    </div>
-
+      <!-- zona números de páginas -->
+      <div id="navPages">
+        <ul>
+          <li><a href="#">&lt;</a></li>
+          <li><span>1</span></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&gt;</a></li>
+        </ul>
+      </div>
+      </div>
     </div>
 
   </section>
@@ -411,7 +414,7 @@
           cada viaje en una experiencia inolvidable. Planificamos tus aventuras a medida,
           ofreciéndote destinos para que solo te preocupes por disfrutar.
         </p>
-        <ul id="socialLinks">
+        <ul id="socialLinks" class="footersEstructura">
           <li>
             <a href="#"><span><i class="twitter"></i></span></a>
           </li>
@@ -423,7 +426,7 @@
           </li>
         </ul>
       </div>
-      <div id="footer-dos">
+      <div id="footer-dos" class="footersEstructura">
         <!-- bloque 2 del pie de página-->
         <h2>Información</h2>
         <ul>
@@ -435,7 +438,7 @@
           <li><a href="">Política de privacidad</a></li>
         </ul>
       </div>
-      <div id="footer-tres">
+      <div id="footer-tres" class="footersEstructura">
         <!-- bloque 3 del pie de página-->
         <h2>Suporte de clientes</h2>
         <ul>
@@ -446,7 +449,7 @@
           <li><a href="">Contáctanos</a></li>
         </ul>
       </div>
-      <div id="footer-cuatro">
+      <div id="footer-cuatro" class="footersEstructura">
         <!-- bloque 4 del pie de página-->
         <h2>Tienes preguntas?</h2>
         <div>
